@@ -1,0 +1,36 @@
+// Layout
+$width-desktop: 46em;
+$width-mobile: 375px;
+
+// Colors
+$clr-primary: hsl(14, 45%, 36%);
+$clr-secondary: hsl(332, 51%, 32%);
+
+$clr-neutral-white: hsl(0, 0%, 100%);
+$clr-neutral-rose-white: hsl(330, 100%, 98%);
+$clr-neutral-eggshell: hsl(30, 54%, 90%);
+$clr-neutral-light-grey: hsl(30, 18%, 87%);
+$clr-neutral-wenge-brown: hsl(30, 10%, 34%);
+$clr-neutral-dark-charcoal: hsl(24, 5%, 18%);
+
+// Typo
+$ff-primary: 'Outfit', sans-serif;
+$ff-secondary: 'Young Serif', serif;
+
+$fw-regular: 400;
+$fw-semi-bold: 600;
+$fw-bold: 700;
+
+$fs-400: 1rem; /* 16px */
+$fs-500: 1.25rem; /* 20px */
+$fs-600: 1.75rem; /* 28px */
+$fs-800: 2.125rem; /* 34px */
+$fs-900: 2.5rem; /* 40px */
+
+// Typo usage
+$fs-body: $fs-400;
+$fs-d-h1: $fs-900;
+$fs-m-h1: $fs-800;
+$fs-h2: $fs-600;
+$fs-h3: $fs-500;
+

@@ -1,0 +1,22 @@
+@use '../abstracts/' as *;
+
+.recipe {
+    background-color: $clr-neutral-white;
+}
+
+.recipe__section {
+    border-bottom: 1px solid $clr-neutral-light-grey;
+    margin-block-end: 1.875em;
+    margin-inline: 2em;
+}
+
+.recipe__section:last-child {
+    border-bottom: none;
+    margin-block-end: 0;
+}
+
+@media screen and (min-width: $width-desktop) {
+    .recipe__section {
+        margin-inline: 0;
+    }
+}

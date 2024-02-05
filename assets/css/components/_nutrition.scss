@@ -1,0 +1,51 @@
+@use '../abstracts/' as *;
+
+.nutrition__p {
+    margin-block-start: 1.25em;
+}
+
+.nutrition__table {
+    border: none;
+    border-collapse: collapse;
+    margin-block-end: 1.625em;
+    margin-block-start: 1.25em;
+    width: 100%;
+}
+
+.nutrition__table-head {
+    font-weight: $fw-regular;
+    padding: .75em 0 .75em 1.875em;
+    text-align: left;
+    width: 50%;
+}
+
+.nutrition__table-data {
+    color: $clr-primary;
+    font-weight: $fw-bold;
+    padding: .75em 0 .75em .625em;
+    width: 50%;
+}
+
+.nutrition__table-row:first-child th {
+    padding: .375em 0 .75em 1.875em;
+}
+
+.nutrition__table-row:first-child td {
+    padding: .375em 0 .75em .625em;
+}
+
+.nutrition__table-row th,
+.nutrition__table-row td {
+    border-bottom: 1px solid $clr-neutral-light-grey;
+}
+
+.nutrition__table-row:last-child th,
+.nutrition__table-row:last-child td {
+    border-bottom: none;
+}
+
+@media screen and (min-width: $width-desktop) {
+    .nutrition__table {
+        margin-block-end: 2em;
+    }
+}

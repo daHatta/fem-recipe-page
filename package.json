@@ -1,0 +1,12 @@
+{
+  "name": "recipe-page-main",
+  "version": "1.0.0",
+  "description": "Easy challenge by Frontend Mentor: Desktop and mobile recipe page.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "sass --watch ./assets/css/main.scss ./assets/css/main.css"
+  },
+  "author": "Heiko John",
+  "license": "ISC"
+}

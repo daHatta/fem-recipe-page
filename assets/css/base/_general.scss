@@ -1,0 +1,39 @@
+@use '../abstracts/' as *;
+
+body {
+    background-color: $clr-neutral-eggshell;
+    color: $clr-neutral-wenge-brown;
+    font-family: $ff-primary;
+    font-size: $fs-400;
+    margin: 0;
+}
+
+article {
+    margin-inline: auto;
+    width: $width-mobile;
+}
+
+img {
+    height: auto;
+}
+
+h1, h2 {
+    font-family: $ff-secondary;
+}
+
+h2 {
+    color: $clr-primary;
+    font-size: $fs-h2;
+    font-weight: $fw-regular;
+}
+
+@media screen and (min-width: $width-desktop) {
+    body {
+        margin-block: 7.75em;
+    }
+    article {
+        border-radius: 20px;
+        padding: 2.5em 2.5em 0;
+        width: $width-desktop;
+    }
+}

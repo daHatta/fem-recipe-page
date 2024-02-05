@@ -1,0 +1,45 @@
+@use '../abstracts/' as *;
+
+.prep__box {
+    background-color: $clr-neutral-rose-white;
+    border-radius: 9px;
+    margin: 2em 2em 0;
+    padding: 1.375em 1.625em 0;
+}
+
+.prep__title {
+    color: $clr-secondary;
+    font-size: $fs-h3;
+}
+
+.prep__list-item::before {
+    background-color: $clr-secondary;
+    border-radius: 100%;
+    content: "";
+    display: inline-block;
+    height: 4px;
+    left: -15%;
+    position: absolute;
+    top: 44%;
+    width: 4px;
+}
+
+.prep__list-item {
+    color: $clr-neutral-wenge-brown;
+    margin: 0 0 .5em;
+    position: relative;
+}
+
+.prep__list-item span {
+    font-weight: $fw-bold;
+}
+
+@media screen and (min-width: $width-desktop) {
+    .prep__box {
+        margin-inline: 0;
+    }
+
+    .prep__list-item::before {
+        left: -6%;
+    }
+}

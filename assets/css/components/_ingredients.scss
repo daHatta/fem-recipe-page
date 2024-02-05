@@ -1,0 +1,29 @@
+@use '../abstracts/' as *;
+
+.ingredients__list {
+    margin-block-end: 1.625em;
+    margin-block-start: 1.25em;
+}
+
+.ingredients__list-item {
+    margin: 0 0 .5em;
+    position: relative;
+}
+
+.ingredients__list-item::before {
+    background-color: $clr-primary;
+    border-radius: 100%;
+    content: "";
+    display: inline-block;
+    height: 4px;
+    left: -12%;
+    position: absolute;
+    top: 42%;
+    width: 4px;
+}
+
+@media screen and (min-width: $width-desktop) {
+    .ingredients__list-item::before {
+        left: -5%;
+    }
+}

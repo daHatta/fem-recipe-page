@@ -1,0 +1,331 @@
+/* ---------------- ABSTRACT ----------------- */
+/* 16px */
+/* 20px */
+/* 28px */
+/* 34px */
+/* 40px */
+/* ---------------- BASE ----------------- */
+/* https://piccalil.li/blog/a-more-modern-css-reset/ */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */ /* p added */
+h1, h2,
+h3, h4, p {
+  margin-block-start: 0; /* added */
+  /* text-wrap: balance; */ /* unchecked */
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* ---------------- ABSTRACT ----------------- */
+body {
+  margin: 0;
+  color: hsl(30, 10%, 34%);
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  background-color: hsl(30, 54%, 90%);
+}
+
+article {
+  margin-inline: auto;
+  width: 375px;
+}
+
+img {
+  height: auto;
+}
+
+h1, h2 {
+  font-family: "Young Serif", serif;
+}
+
+h2 {
+  color: hsl(14, 45%, 36%);
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 46em) {
+  body {
+    margin-block: 7.75em;
+  }
+  article {
+    width: 46em;
+    border-radius: 20px;
+    padding: 2.5em 2.5em 0;
+  }
+}
+/* ---------------- UTILITIES ----------------- */
+.flow-root {
+  display: flow-root;
+}
+
+/* ---------------- COMPONENTS --------------------------- */
+/* ---------------- ABSTRACT ----------------- */
+.prep__box {
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 9px;
+  margin: 2em 2em 0;
+  padding: 1.375em 1.625em 0;
+}
+
+.prep__title {
+  color: hsl(332, 51%, 32%);
+  font-size: 1.25rem;
+}
+
+.prep__list-item::before {
+  display: inline-block;
+  content: "";
+  width: 4px;
+  height: 4px;
+  background-color: hsl(332, 51%, 32%);
+  border-radius: 100%;
+  position: absolute;
+  left: -15%;
+  top: 44%;
+}
+
+.prep__list-item {
+  color: hsl(30, 10%, 34%);
+  position: relative;
+  margin: 0 0 0.5em;
+}
+
+.prep__list-item span {
+  font-weight: 700;
+}
+
+@media screen and (min-width: 46em) {
+  .prep__box {
+    margin-inline: 0;
+  }
+  .prep__list-item::before {
+    left: -6%;
+  }
+}
+/* ---------------- ABSTRACT ----------------- */
+.ingredients__list {
+  margin-block-start: 1.25em;
+  margin-block-end: 1.625em;
+}
+
+.ingredients__list-item {
+  position: relative;
+  margin: 0 0 0.5em;
+}
+
+.ingredients__list-item::before {
+  display: inline-block;
+  content: "";
+  width: 4px;
+  height: 4px;
+  background-color: hsl(14, 45%, 36%);
+  border-radius: 100%;
+  position: absolute;
+  left: -12%;
+  top: 42%;
+}
+
+@media screen and (min-width: 46em) {
+  .ingredients__list-item::before {
+    left: -5%;
+  }
+}
+/* ---------------- ABSTRACT ----------------- */
+.instructions__list {
+  position: relative;
+  margin-block-start: 1.25em;
+  margin-block-end: 1.625em;
+}
+
+.instructions__list-item {
+  margin: 0 0 0.5em;
+}
+
+.instructions__list-item::before {
+  display: inline-block;
+  content: attr(data-step);
+  position: absolute;
+  left: 7px;
+  font-weight: 700;
+  color: hsl(14, 45%, 36%);
+}
+
+.instructions__list-item span {
+  font-weight: 700;
+}
+
+/* ---------------- ABSTRACT ----------------- */
+.nutrition__p {
+  margin-block-start: 1.25em;
+}
+
+.nutrition__table {
+  width: 100%;
+  border: none;
+  border-collapse: collapse;
+  margin-block-start: 1.25em;
+  margin-block-end: 1.625em;
+}
+
+.nutrition__table-head {
+  font-weight: 400;
+  text-align: left;
+  padding: 0.75em 0 0.75em 1.875em;
+  width: 50%;
+}
+
+.nutrition__table-data {
+  width: 50%;
+  font-weight: 700;
+  color: hsl(14, 45%, 36%);
+  padding: 0.75em 0 0.75em 0.625em;
+}
+
+.nutrition__table-row:first-child th {
+  padding: 0.375em 0 0.75em 1.875em;
+}
+
+.nutrition__table-row:first-child td {
+  padding: 0.375em 0 0.75em 0.625em;
+}
+
+.nutrition__table-row th,
+.nutrition__table-row td {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.nutrition__table-row:last-child th,
+.nutrition__table-row:last-child td {
+  border-bottom: none;
+}
+
+@media screen and (min-width: 46em) {
+  .nutrition__table {
+    margin-block-end: 2em;
+  }
+}
+/* ---------------- LAYOUT ----------------- */
+/* ---------------- ABSTRACT ----------------- */
+.header {
+  margin-block-end: 2.625em;
+}
+
+.header__img-box {
+  margin: 0;
+}
+
+.header__content-box {
+  padding: 2.375em 0 0;
+  margin-inline: 2em;
+}
+
+.header__content-title {
+  color: hsl(24, 5%, 18%);
+  font-size: 2.125rem;
+}
+
+.header__content-text {
+  margin: 1.5em 0 0;
+}
+
+@media screen and (min-width: 46em) {
+  .header__img-item {
+    border-radius: 9px;
+  }
+  .header__content-box {
+    margin-inline: 0;
+  }
+  .header__content-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+}
+/* ---------------- PAGES ----------------- */
+/* ---------------- ABSTRACT ----------------- */
+.recipe {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.recipe__section {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  margin-inline: 2em;
+  margin-block-end: 1.875em;
+}
+
+.recipe__section:last-child {
+  border-bottom: none;
+  margin-block-end: 0;
+}
+
+@media screen and (min-width: 46em) {
+  .recipe__section {
+    margin-inline: 0;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,38 @@
+@use '../abstracts/' as *;
+
+.header {
+    margin-block-end: 2.625em;
+}
+
+.header__img-box {
+    margin: 0;
+}
+
+.header__content-box {
+    margin-inline: 2em;
+    padding: 2.375em 0 0;
+}
+
+.header__content-title {
+    color: $clr-neutral-dark-charcoal;
+    font-size: $fs-m-h1;
+}
+
+.header__content-text {
+    margin: 1.5em 0 0;
+}
+
+@media screen and (min-width: $width-desktop) {
+    .header__img-item {
+        border-radius: 9px;
+    }
+
+    .header__content-box {
+        margin-inline: 0;
+    }
+
+    .header__content-title {
+        font-size: $fs-d-h1;
+        font-weight: $fw-semi-bold;
+    }
+}

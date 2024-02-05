@@ -1,0 +1,29 @@
+@charset 'utf-8';
+
+// https://sass-guidelin.es/#architecture
+// https://dev.to/dostonnabotov/a-modern-sass-folder-structure-330f
+// https://www.youtube.com/watch?v=CR-a8upNjJ0
+
+/* ---------------- ABSTRACT ----------------- */
+// VARIABLES
+@use 'abstracts';
+
+/* ---------------- BASE ----------------- */
+// RESET and GENERAL
+@use 'base';
+
+/* ---------------- UTILITIES ----------------- */
+// EXTRAS
+@use 'utilities';
+
+/* ---------------- COMPONENTS --------------------------- */
+// PREPARATION, INGREDIENTS, INSTRUCTIONS and NUTRITION
+@use 'components';
+
+/* ---------------- LAYOUT ----------------- */
+// HEADER
+@use 'layout';
+
+/* ---------------- PAGES ----------------- */
+// RECIPE
+@use 'pages';

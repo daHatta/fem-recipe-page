@@ -1,0 +1,24 @@
+@use '../abstracts/' as *;
+
+.instructions__list {
+    margin-block-end: 1.625em;
+    margin-block-start: 1.25em;
+    position: relative;
+}
+
+.instructions__list-item {
+    margin: 0 0 .5em;
+}
+
+.instructions__list-item::before {
+    color: $clr-primary;
+    content: attr(data-step);
+    display: inline-block;
+    font-weight: $fw-bold;
+    left: 7px;
+    position: absolute;
+}
+
+.instructions__list-item span {
+    font-weight: $fw-bold;
+}
