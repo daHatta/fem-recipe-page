@@ -26,9 +26,9 @@ figure, blockquote, dl, dd {
   margin-block-end: 0;
 }
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role=list],
-ol[role=list] {
+/* Remove list styles on ul, ol elements, which suggests default styling will be removed */
+ul,
+ol {
   list-style: none;
 }
 
@@ -82,11 +82,11 @@ textarea:not([rows]) {
 
 /* ---------------- ABSTRACT ----------------- */
 body {
-  margin: 0;
+  background-color: hsl(30, 54%, 90%);
   color: hsl(30, 10%, 34%);
   font-family: "Outfit", sans-serif;
   font-size: 1rem;
-  background-color: hsl(30, 54%, 90%);
+  margin: 0;
 }
 
 article {
@@ -113,9 +113,9 @@ h2 {
     margin-block: 7.75em;
   }
   article {
-    width: 46em;
     border-radius: 20px;
     padding: 2.5em 2.5em 0;
+    width: 46em;
   }
 }
 /* ---------------- UTILITIES ----------------- */
@@ -135,24 +135,26 @@ h2 {
 .prep__title {
   color: hsl(332, 51%, 32%);
   font-size: 1.25rem;
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
 }
 
 .prep__list-item::before {
-  display: inline-block;
-  content: "";
-  width: 4px;
-  height: 4px;
   background-color: hsl(332, 51%, 32%);
   border-radius: 100%;
-  position: absolute;
+  content: "";
+  display: inline-block;
+  height: 4px;
   left: -15%;
+  position: absolute;
   top: 44%;
+  width: 4px;
 }
 
 .prep__list-item {
   color: hsl(30, 10%, 34%);
-  position: relative;
   margin: 0 0 0.5em;
+  position: relative;
 }
 
 .prep__list-item span {
@@ -169,25 +171,25 @@ h2 {
 }
 /* ---------------- ABSTRACT ----------------- */
 .ingredients__list {
-  margin-block-start: 1.25em;
   margin-block-end: 1.625em;
+  margin-block-start: 1.25em;
 }
 
 .ingredients__list-item {
-  position: relative;
   margin: 0 0 0.5em;
+  position: relative;
 }
 
 .ingredients__list-item::before {
-  display: inline-block;
-  content: "";
-  width: 4px;
-  height: 4px;
   background-color: hsl(14, 45%, 36%);
   border-radius: 100%;
-  position: absolute;
+  content: "";
+  display: inline-block;
+  height: 4px;
   left: -12%;
+  position: absolute;
   top: 42%;
+  width: 4px;
 }
 
 @media screen and (min-width: 46em) {
@@ -197,9 +199,9 @@ h2 {
 }
 /* ---------------- ABSTRACT ----------------- */
 .instructions__list {
-  position: relative;
-  margin-block-start: 1.25em;
   margin-block-end: 1.625em;
+  margin-block-start: 1.25em;
+  position: relative;
 }
 
 .instructions__list-item {
@@ -207,12 +209,12 @@ h2 {
 }
 
 .instructions__list-item::before {
-  display: inline-block;
-  content: attr(data-step);
-  position: absolute;
-  left: 7px;
-  font-weight: 700;
   color: hsl(14, 45%, 36%);
+  content: attr(data-step);
+  display: inline-block;
+  font-weight: 700;
+  left: 7px;
+  position: absolute;
 }
 
 .instructions__list-item span {
@@ -225,25 +227,25 @@ h2 {
 }
 
 .nutrition__table {
-  width: 100%;
   border: none;
   border-collapse: collapse;
-  margin-block-start: 1.25em;
   margin-block-end: 1.625em;
+  margin-block-start: 1.25em;
+  width: 100%;
 }
 
 .nutrition__table-head {
   font-weight: 400;
-  text-align: left;
   padding: 0.75em 0 0.75em 1.875em;
+  text-align: left;
   width: 50%;
 }
 
 .nutrition__table-data {
-  width: 50%;
-  font-weight: 700;
   color: hsl(14, 45%, 36%);
+  font-weight: 700;
   padding: 0.75em 0 0.75em 0.625em;
+  width: 50%;
 }
 
 .nutrition__table-row:first-child th {
@@ -280,8 +282,8 @@ h2 {
 }
 
 .header__content-box {
-  padding: 2.375em 0 0;
   margin-inline: 2em;
+  padding: 2.375em 0 0;
 }
 
 .header__content-title {
@@ -313,8 +315,8 @@ h2 {
 
 .recipe__section {
   border-bottom: 1px solid hsl(30, 18%, 87%);
-  margin-inline: 2em;
   margin-block-end: 1.875em;
+  margin-inline: 2em;
 }
 
 .recipe__section:last-child {

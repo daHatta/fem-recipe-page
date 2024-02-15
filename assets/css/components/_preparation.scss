@@ -10,6 +10,8 @@
 .prep__title {
     color: $clr-secondary;
     font-size: $fs-h3;
+    font-family: $ff-primary;
+    font-weight: $fw-bold;
 }
 
 .prep__list-item::before {
