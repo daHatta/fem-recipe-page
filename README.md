@@ -67,8 +67,8 @@ _data-attributes_. It was also nice to learn more about tables.
 ### Continued development
 
 These kind of project was nice to solve in order to get used to semantic html and the change of layouts due to the browser width.
-It is important to identify the changes and to build a efficient markup that can be used on all devices. This is a lesson which should be
-practiced regularly. Next step should be definitely forms which are important for user interaction.
+It is important to identify the changes and to build a efficient markup that can be used on all devices. This is a lesson which I would  
+like to practice regularly. Next step might be forms which are important for user interaction.
 
 ### Useful resources
 
